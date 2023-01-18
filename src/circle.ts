@@ -39,7 +39,7 @@ function createCircle(x: number, y: number) {
 }
 
 function animateCircle(indexOfCircle: number, movementEase: any, scaleUpEase: any, scaleDownEase: any) {
-    gsap.to(circles[indexOfCircle], { pixi: { x: 700 }, duration: 1, delay: 1, ease: movementEase });
+    gsap.to(circles[indexOfCircle], { pixi: { x: 700 }, duration: 2, delay: 1, ease: movementEase });
     gsap.to(circles[indexOfCircle], { pixi: { scale: 1.5 }, duration: 1, delay: 1, ease: scaleUpEase });
     gsap.to(circles[indexOfCircle], { pixi: { scale: 1 }, duration: 1, delay: 2, ease: scaleDownEase });
 }
